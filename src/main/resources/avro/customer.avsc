@@ -1,0 +1,32 @@
+{
+  "type": "record",
+  "name": "Customer",
+  "namespace": "iot",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "name",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "longitude",
+      "type": ["null","double"],
+      "default": null
+    },
+    {
+      "name": "latitude",
+      "type": ["null","double"],
+      "default": null
+    }
+  ],
+  "connect.name": "iot"
+}

@@ -1,0 +1,58 @@
+{
+  "type": "record",
+  "name": "CoffeeInformation",
+  "namespace": "iot",
+  "fields": [
+    {
+      "name": "customerId",
+      "type": ["null","string"],
+      "default": null
+    },
+    {
+      "name": "coffeeId",
+      "type": ["null","string"],
+      "default": null
+    },
+    {
+      "name": "coffeeMachineSerial",
+      "type": ["null","string"],
+      "default": null
+    },
+    {
+      "name": "deviceSerial",
+      "type": ["null","string"],
+      "default": null
+    },
+    {
+      "name": "coffeeDosage",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "coffeeMilligrams",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "timestamp",
+       "type":[
+         "null",
+         {
+           "type" : "long",
+           "logicalType": "date"
+         }],
+      "default": null
+    },
+    {
+      "name": "groupId",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "customerName",
+      "type": ["null","string"],
+      "default": null
+    }
+  ],
+  "connect.name": "iot"
+}

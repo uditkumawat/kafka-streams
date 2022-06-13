@@ -1,0 +1,48 @@
+{
+  "type": "record",
+  "name": "Coffee",
+  "namespace": "iot",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "coffeeMachineId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "groupId",
+      "type": "int"
+    },
+    {
+      "name": "customerId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "timestamp",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "milligrams",
+      "type": "int"
+    },
+    {
+      "name": "dosage",
+      "type": "int"
+    }
+  ],
+  "connect.name": "iot"
+}

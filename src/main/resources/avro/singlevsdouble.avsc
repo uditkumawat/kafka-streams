@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "SingleVsDouble",
+  "namespace": "iot",
+  "fields": [
+    {
+      "name": "customerId",
+      "type": "string"
+    },
+    {
+      "name": "dosage",
+      "type": "int"
+    }
+  ]
+}

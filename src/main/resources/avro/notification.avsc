@@ -1,0 +1,74 @@
+{
+  "type": "record",
+  "name": "Notification",
+  "namespace": "iot",
+  "fields": [
+    {
+      "name": "deviceId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "deviceSerial",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "deviceLongitude",
+      "type": "double"
+    },
+    {
+      "name": "deviceLatitude",
+      "type": "double"
+    },
+    {
+      "name": "coffeeMachineId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "coffeeMachineSerial",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "groupCount",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "customerId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "customerName",
+      "type": ["null",{
+        "type": "string",
+        "avro.java.string": "String"
+      }],
+      "default": null
+    },
+    {
+      "name": "customerLongitude",
+      "type": ["null","double"],
+      "default": null
+    },
+    {
+      "name": "customerLatitude",
+      "type": ["null","double"],
+      "default": null
+    }
+  ],
+  "connect.name": "iot"
+}

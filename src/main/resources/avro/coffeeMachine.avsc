@@ -1,0 +1,33 @@
+{
+  "type": "record",
+  "name": "CoffeeMachine",
+  "namespace": "iot",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "serial",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "customerId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "groupCount",
+      "type": "int"
+    }
+  ],
+  "connect.name": "iot"
+}

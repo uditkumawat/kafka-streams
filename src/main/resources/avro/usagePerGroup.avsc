@@ -1,0 +1,34 @@
+{
+  "type": "record",
+  "name": "UsagePerGroup",
+  "namespace": "iot",
+  "fields": [
+    {
+      "name": "CoffeeMachineIdGroupIdKey",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "CoffeeMachineId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "GroupId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "count",
+      "type": "long",
+      "default": 0
+    }
+  ],
+  "connect.name": "iot"
+}

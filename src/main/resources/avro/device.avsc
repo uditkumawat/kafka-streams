@@ -1,0 +1,37 @@
+{
+  "type": "record",
+  "name": "Device",
+  "namespace": "iot",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "serial",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "coffeeMachineId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "longitude",
+      "type": "double"
+    },
+    {
+      "name": "latitude",
+      "type": "double"
+    }
+  ],
+  "connect.name": "iot"
+}
